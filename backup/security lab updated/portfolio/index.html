@@ -1,0 +1,308 @@
+<html>
+    <head>
+
+		<title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+		
+  
+        <div style="float: left; width: 65%;color: white;">
+           
+		<!--------------------------------worked on div----------------------------------------------->
+            
+			<div class="wrapper" id="workedon">
+				
+				
+				<div class="container" id="c0" onclick="hseek('workedon','iot')">
+					<img src="" alt="image2" style="width: 100%; height: 85%;">
+					<h3 style="color: #232933;">Iot with Computer Vision</h3>
+				</div>
+				<div class="container" id="c1" onclick="hseek('workedon','part')">
+					<img src="" alt="image3" style="width: 100%; height: 90%;">
+					<h3 style="color: #232933;">Participation</h3>
+					
+					
+				</div>
+
+				<div class="container" id="c2" onclick="hseek('workedon','web')">
+					<img src="" style="width: 100%; height: 90%;" alt="image1">
+					<h3 style="color: #232933;">Web Technology</h3>
+					
+				</div>
+
+				
+			</div>
+			<!------------------------------worked on content----------------------->
+			<div id="iot" class="wrapper_2" style="display: none;">
+				
+				<span style="float:right;font-size: 35px; cursor: pointer;" onclick="hseek('iot','workedon')">&#xd7;</span>
+				<div style="width: 96%; height: 95%;margin-left: 1%; margin-top: 3%;">
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">facial recog door</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">Lucy the Companion</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">Smart Helmet</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">Fire alert and sprinkler with opencv</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="web" class="wrapper_2">
+
+				<span style="float:right;font-size: 35px; cursor: pointer;" onclick="hseek('web','workedon')">&#xd7;</span>
+				<div style="width: 95%; height: 80%;margin-left: 3%; margin-top: 10%;">
+					<div class="card" onclick="hseek('web','translate')" style="height: 70%;">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">Quilipad api (Translate to regional language)</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					<div onclick="hseek('web','sp')" class="card" style="height: 70%;">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">Student portal with session and catche</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!----------------------------content of web------------------------------->
+			
+			<div id="sp" style="width:70%;height:55%;margin-top: 15%; margin-left: 5%; display: none;">
+				<span style="float:right;font-size: 35px; cursor: pointer;margin-top: -10%;" onclick="hseek('sp','web')">&#xd7;</span>
+				<div style=" width:95%;height:95%;">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/oIpRxFjp-BA?list=PLQvQBRxdT1zF68Sz7ZnzlcTIdzzyZCCll" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div id="translate" style="width:70%;height:55%;margin-top: 15%; margin-left: 5%;display: none;">
+				<span style="float:right;font-size: 35px; cursor: pointer;margin-top: -10%;" onclick="hseek('translate','web')">&#xd7;</span>
+				<div style=" width:95%;height:95%;">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dxLwJ-ook1k" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<!-----------------------------end content of web----------------------------->
+			<div id="part" class="wrapper_2">
+				<span style="float:right;font-size: 35px; cursor: pointer;" onclick="hseek('part','workedon')">&#xd7;</span>
+				<div style="width: 95%; height: 95%;margin-left: 3%; margin-top: 3%;">
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">TCS CodeVita</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">DRDO Project expo</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardinner">
+							<div class="cardfront"><h3 style="color: #232933;">Tech speak on cloud (salesforce summit)</h3></div>
+							<div class="cardback"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+			<!------------------------------worked on content end-------------------->
+		<!---------------------------------workedon div end ------------------------>	
+		<!---------------------------------about div-------------------------------->
+			<div class="wrapper_2" id="about" style=" display: block;">
+				<div class="dp">
+					<img src="images/dp.png" alt="dp" style="width: 100%; height: 100%; border-radius: 35px;">
+				</div>
+				
+				<div class="info">
+				 	<h3>Pyramids</h3>
+					<p class="para"> Built during a time when Egypt was one of the richest and most powerful 
+						civilizations in the world. Their massive scale reflects the unique role 
+						that the pharaoh played in ancient Egyptian society.</p>
+				</div>
+			</div>
+		<!---------------------------------about div end-------------------------------->
+		<!---------------------------------skills div-------------------------------->
+			<div class="wrapper_2" id="skills" style="border-radius: 35px;animation: entry 1s linear 1;">
+				<div style="width: 50%;height:100%;float: left;">
+					<h3 style="text-align: left;">C</h3>
+					<div class="outer">
+						<div class="inner" style="width: 75%;" id="c"></div>75%
+					</div>
+					<h3 style="text-align: left;">Python</h3>
+					<div class="outer">
+						<div class="inner" style="width: 70%;" id="python"></div>70%
+					</div>
+					<h3 style="text-align: left;">Embeded C</h3>
+					<div class="outer">
+						<div class="inner" style="width: 55%;" id="embeded"></div>55%
+					</div>
+					<h3 style="text-align: left;">JavaScript</h3>
+					<div class="outer">
+						<div class="inner" style="width: 50%;" id="js"></div>50%
+					</div>
+					<h3 style="text-align:center;">PhP</h3>
+					<div class="outer" style="margin-left: 50%;">
+						<div class="inner" style="width: 30%;" id="php"></div>30%
+					</div>
+				</div>
+				<div style="width: 50%;height:100%;float: right;">
+					<h3 style="text-align: left;">C++</h3>
+					<div class="outer">
+						<div class="inner" style="width: 60%;" id="cpp"></div>60%
+					</div>
+					<h3 style="text-align: left; ">Computer Vision(opencv)</h3>
+					<div class="outer">
+						<div class="inner" style="width: 40%;" id="cv"></div>40%
+					</div>
+					<h3 style="text-align: left;">CSS</h3>
+					<div class="outer">
+						<div class="inner" style="width: 40%;" id="css"></div>40%
+					</div>
+					<h3 style="text-align: left;">Java</h3>
+					<div class="outer">
+						<div class="inner" style="width: 50%;" id="java"></div>50%
+					</div>
+				</div>
+				
+			</div>
+		<!---------------------------------skills div end-------------------------------->
+		<!---------------------------------reachme div-------------------------------->
+			<div class="wrapper_2" id="reachme" style="animation: entry 1s linear 1;font: 20px;">
+				<h3>Pythonist ?  Let's intract</h3>	
+				<iframe src="https://trinket.io/embed/python/e4eeadfb6d" width="100%" height="60%" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				<div style="top:70%; width: 100%;height: 30%;">
+					<h3 >Know Me <a href="images/RESUME.pdf" target="_blank" download rel="noreferrer" >&#x2913;</a> </h3>
+					<a href="https://twitter.com/living_hum" style="margin-left: 9%;padding:1% 1% 1% 1%; background-color: #29c5ab;border-radius: 20px; font-size: 30px;" ><i class="fa fa-twitter"></i></a>
+					<a href="https://github.com/livinghumanz?tab=repositories" style="margin-left: 9.5%;padding:1% 1% 1% 1%; background-color: #29c5ab;border-radius: 20px;font-size: 30px;"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/ramesh-sharma-245628168/" style="margin-left: 10%;padding:1% 1% 1% 1%; background-color: #29c5ab;border-radius: 20px;font-size: 30px;"><i class="fa fa-linkedin"></i></a>
+					&nbsp;&nbsp;&#x2709; rameshsharma261098@gmail.com
+				</div>
+			</div>
+		<!---------------------------------reachme div end-------------------------------->
+						
+<!--------------------------------------------------------------->
+        </div>
+<!--------------------------------------------------------------->
+        </div>
+<!-------------------------------right side tab------------------------------->
+		<div style="float:right; width:35%;">
+			<div style="padding: 20% 0 0 0; width: 366px; height: 366;">
+				<img id="" src="images/portfolio.png" style="position: absolute; z-index: 1;">
+				<div class="pf_text" id="pf_text" >
+					<p onclick="show_and_select(this,'about')"  id="habout" style="text-shadow: 1px 2px 30px #f7b993;text-decoration: underline #29c5ab;text-decoration: underline 3px #29c5ab;">RAMESH SHARMA</p>
+					<p onclick="show_and_select(this,'workedon')" style="padding-left: 10px;"id="hworked">WORKED ON</p>
+					<p onclick="show_and_select(this,'skills')" style="padding-left: 25px;"id="hskill">SKILLS</p>
+					<p onclick="show_and_select(this,'reachme')" style="padding-left: 45px;"id="hreach">INTRACT</p>
+				</div>
+				<img id="antiloading" src="images/r1.svg" style="position: absolute; z-index: -1;">
+				<img id="loading" src="images/r1a.svg"style="position: absolute; z-index: -1;">
+						
+				<img id="loading" src="images/r2.svg" style="position: absolute; z-index: -1;">
+				<img id="antiloading" src="images/r2a.svg" style="position: absolute; z-index: -1;">
+					
+				<img id="antiloading" src="images/r3.svg" style="position: absolute; z-index: -1;">
+				<imgid="loading"  src="images/r3a.svg" style="position: absolute; z-index: -1;">
+				
+				<img id="loading"src="images/r4a.svg" style="position: absolute; z-index: -1;">
+				<img id="antiloading" src="images/r4a.svg" style="position: absolute; z-index: -1;">
+						
+				<img  id="antiloading" src="images/r5.svg" style="position: absolute; z-index: -1;">
+				<img id="loading" src="images/r5a.svg" style="position: absolute; z-index: -1; text-align:center; ">
+			</div>
+			
+		</div>
+            
+    </body>
+</html>
+<!----------------------------------
+
+	<!DOCTYPE html>
+<html>
+<body style="background-color:black; color:white;">
+<style>
+.hl{
+	background:linear-gradient(to bottom, #fcac56 30%, #f7b993 100%);
+    border:none;
+	width:5%;
+    height:7px;
+    float:left;
+    display:none; 
+
+}
+@keyframes entry {
+  0% {
+  	
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+  	
+    top: 0%;
+  }
+}
+</style>
+<script>
+function zoom(i)
+{
+	x=document.getElementById(i);
+	x.style.display="block";
+    x.style.animation="entry 1s linear infinite";
+}
+function zoomout(i)
+{
+	x=document.getElementById(i);
+    if(x.style.animation=="none")
+		x.style.display="block";
+    else
+    	x.style.display="none";
+}
+function disp(i)
+{
+	x=document.getElementById(i);
+    x.style.animation="none";
+    x.style.display="block";
+}
+</script>
+
+<h1>HTML</h1>
+<p>HTML is a language for describing web pages.</p>
+
+<hr class="hl" id="about">
+
+
+<p onclick="disp('about')" onmouseover="zoom('about')" onmouseout="zoomout('about')">&nbsp;CSS defines how to display HTML elements.</p>
+<hr class="hl" id="about1">
+
+
+<p onclick="disp('about1')" onmouseover="zoom('about1')" onmouseout="zoomout('about1')">&nbsp;CSS defines how to display HTML elements.</p>
+</body>
+</html>
+
+
+------------------------------------->

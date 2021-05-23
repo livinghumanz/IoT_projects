@@ -1,0 +1,252 @@
+body {
+  
+    background: #232933;
+}
+
+/*******************css for rings*************************/
+#pf_text ::first-letter{
+  font-size: 200%;
+  font-weight: normal;
+}
+p{
+  border-style: double 2px;
+  border-color: beige;
+}
+.pf_text{
+
+  padding-left: 5%;
+  position: absolute;
+  top: 250px;
+  color: floralwhite;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: .7;
+  /*text-shadow: 1px 0px 20px #b1eee9;*/
+  z-index: 1;
+  
+
+}
+#hworked:hover,#habout:hover,#hreach:hover,#hskill:hover
+{
+  
+  animation: tex 1s linear;
+  cursor: pointer;
+}
+@keyframes tex{
+  0% {
+    text-shadow: 1px 0px 20px rgb(123, 205, 216) ;
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+#loading {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+#antiloading {
+    animation: antirotation 8s infinite linear;
+}
+@keyframes antirotation {
+    from {
+        -webkit-transform: rotate(359deg);		
+    }
+    to {
+        -webkit-transform: rotate(0deg);			
+    }
+}
+
+
+/***************************css for project list floating cards*******************/
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 21%;
+  width: 250px;
+  height: 500px;
+  perspective: 900px;
+  display: none;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fcac56 30%, #f7b993 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #ff0000 30%,#fd9a9a  100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+  
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+/**************************css for about div *******************/
+.wrapper_2 {
+  
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  bottom: 10%;
+  width:700px;
+  height:470px;
+  perspective: 900px;
+  display:none;
+  
+}
+.dp{
+  position: absolute;
+  border-radius: 25px;
+  top: 0%;
+  left: 35%;
+  width: 38%;
+  height: 45%;
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+  
+}
+.info{
+  border-radius: 25px;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  height: 55%;
+  width: 90%;
+  background: linear-gradient(to bottom, #cf5656 0%,#b15b5b  40%);
+  /*background:#00ffff;*/
+  
+  z-index: 30;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(.9);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+.info:hover{
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+.para{
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.inner{
+  background: #86ff86;
+  height: 100%;
+}
+.outer{
+  text-align: right;
+  width: 90%;
+  height:3.2%;
+  background: #428d4299;
+}
+a{
+  font-size: 40px; 
+  text-decoration: none; 
+  color: beige;
+  text-shadow: none;
+ 
+}
+/*********************flip card******************************/
+.card{
+  width:47%;
+  height:47%; 
+  margin-top: 1%;
+  margin-left: 1%; 
+  float: left; 
+  background-color:transparent;
+  
+}
+.cardinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card:hover .cardinner{
+  transform:rotateY(180deg);
+}
+.cardfront, .cardback{
+  position: absolute;
+  width:100%;
+  height:100%;
+  -webkit-backface-visibility: hidden;/* chrome ,safari*/
+  backface-visibility: hidden;
+}
+.cardfront{
+  background-color:#86ff86;
+  color: black;
+}
+.cardback{
+  background-color: pink;
+  color: black;
+  transform: rotateY(180deg);
+}
